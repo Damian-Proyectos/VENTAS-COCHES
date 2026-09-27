@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Vehículo | Venta de Coches</title>
+    <!-- Hojas de estilo subiendo un nivel -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/components.css">
+</head>
+<body>
+
+    <!-- Encabezado / Navegación -->
+    <header class="navbar">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../assets/ICONS/logo.svg" alt="Logo Concesionario" width="150">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="login.html" class="btn-login">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección Principal del Detalle del Coche -->
+    <main class="car-detail-container">
+        <!-- Título y Precio -->
+        <div class="car-header">
+            <h1>Audi A4 Sedan 2.0 TDI</h1>
+            <p class="price">28.500 €</p>
+        </div>
+
+        <div class="car-detail-wrapper">
+            <!-- Galería de Imágenes -->
+            <section class="gallery-section">
+                <div class="main-image">
+                    <img id="current-img" src="../assets/IMG/coche1.jpg" alt="Audi A4 Principal">
+                </div>
+                <div class="thumbnail-list">
+                    <img src="../assets/IMG/coche1.jpg" alt="Vista Frontal" onclick="changeImage(this.src)">
+                    <img src="../assets/IMG/coche1-interior.jpg" alt="Vista Interior" onclick="changeImage(this.src)">
+                    <img src="../assets/IMG/coche1-trasera.jpg" alt="Vista Trasera" onclick="changeImage(this.src)">
+                </div>
+            </section>
+
+            <!-- Ficha Técnica y Formulario de Interés -->
+            <aside class="car-sidebar">
+                <div class="specs-box">
+                    <h2>Especificaciones del Coche</h2>
+                    <ul>
+                        <li><strong>Marca:</strong> Audi</li>
+                        <li><strong>Modelo:</strong> A4 Sedan</li>
+                        <li><strong>Año:</strong> 2022</li>
+                        <li><strong>Kilometraje:</strong> 45.000 km</li>
+                        <li><strong>Combustible:</strong> Diésel</li>
+                        <li><strong>Transmisión:</strong> Automática</li>
+                        <li><strong>Potencia:</strong> 190 CV</li>
+                        <li><strong>Color:</strong> Gris Metalizado</li>
+                    </ul>
+                </div>
+
+                <!-- Botón / Acción rápida -->
+                <div class="action-box">
+                    <h3>¿Te interesa este vehículo?</h3>
+                    <a href="contacto.html" class="btn-primary">Solicitar Información / Prueba</a>
+                </div>
+            </aside>
+        </div>
+
+        <!-- Descripción detallada y Equipamiento -->
+        <section class="car-description">
+            <h2>Descripción del Vehículo</h2>
+            <p>Excelente estado de conservación, único propietario y revisiones pasadas en taller oficial. Cuenta con paquete deportivo, faros LED, navegador integrado y sensores de aparcamiento delanteros y traseros.</p>
+
+            <h2>Equipamiento Destacado</h2>
+            <ul class="features-list">
+                <li>Sistema de Navegación MMI</li>
+                <li>Control de crucero adaptativo</li>
+                <li>Climatizador bizona</li>
+                <li>Conectividad Bluetooth / Apple CarPlay</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2026 AutosPremium. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Scripts de JavaScript -->
+    <script src="../js/interacciones.js"></script>
+</body>
+</html>

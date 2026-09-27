@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutosPremium | Venta de Coches</title>
+    <!-- Vinculación a las hojas de estilo -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+    <!-- Encabezado y Navegación -->
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/ICONS/logo.svg" alt="Logo AutosPremium" width="150">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="html/contacto.html">Contacto</a></li>
+                <li><a href="html/login.html" class="btn-login">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección Principal / Banner Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Encuentra el Coche de tus Sueños</h1>
+            <p>Explora nuestro catálogo exclusivo de vehículos revisados y con garantía total.</p>
+        </div>
+    </section>
+
+    <!-- Buscador y Filtros -->
+    <section class="filter-section">
+        <form class="search-box">
+            <input type="text" id="search-input" placeholder="Buscar por marca, modelo...">
+            <select id="filter-brand">
+                <option value="">Todas las Marcas</option>
+                <option value="bmw">BMW</option>
+                <option value="audi">Audi</option>
+                <option value="mercedes">Mercedes-Benz</option>
+            </select>
+            <button type="button" id="btn-search" class="btn-primary">Buscar</button>
+        </form>
+    </section>
+
+    <!-- Catálogo de Coches Destacados -->
+    <main class="catalog-container">
+        <h2>Vehículos Destacados</h2>
+        
+        <div class="car-grid">
+            <!-- Tarjeta de Coche 1 -->
+            <article class="car-card">
+                <img src="assets/IMG/coche1.jpg" alt="Audi A4">
+                <div class="car-info">
+                    <h3>Audi A4 Sedan</h3>
+                    <p class="price">28.500 €</p>
+                    <ul class="specs">
+                        <li>Año: 2022</li>
+                        <li>45.000 km</li>
+                        <li>Diésel</li>
+                    </ul>
+                    <a href="html/coche-detalle.html" class="btn-secondary">Ver Detalles</a>
+                </div>
+            </article>
+
+            <!-- Tarjeta de Coche 2 -->
+            <article class="car-card">
+                <img src="assets/IMG/coche2.jpg" alt="BMW Serie 3">
+                <div class="car-info">
+                    <h3>BMW Serie 3</h3>
+                    <p class="price">32.000 €</p>
+                    <ul class="specs">
+                        <li>Año: 2023</li>
+                        <li>20.000 km</li>
+                        <li>Gasolina</li>
+                    </ul>
+                    <a href="html/coche-detalle.html" class="btn-secondary">Ver Detalles</a>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2026 AutosPremium. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Scripts de Javascript -->
+    <script src="js/interacciones.js"></script>
+    <script src="js/filtros.js"></script>
+</body>
+</html>
